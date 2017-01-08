@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="cuiqingwei">
+        <link rel="canonical" href="https://iotknowledges.github.io/stands&protocols/ZigBee/">
+        <link rel="shortcut icon" href="favicon.ico">
+        
+
+	<title>ZigBee - IoT</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-42607542-3', 'iotknowledges.github.io');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">IoT</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">首页</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">概念 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../base/IoT/">IoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/WoT/">WoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/IoE/">IoE</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/M2M/">M2M</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/LPWAN/">LPWAN</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/LTE/">LTE</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/IETF/">IETF</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/iotpic/">onePIC</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">协议&标准 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../zWave/">z-Wave</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../EnOcean/">EnOcean</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../802.15.4/">IEEE802.15.4</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">ZigBee</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../6LoWPAN/">6LoWPAN</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../RPL/">RPL</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Lora/">LoRa</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../NB-IoT/">NB-IoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Sigfox/">Sigfox</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../HaLow/">Halow</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../WiGig/">WiGig</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">操作系统 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../os/tinyos/">TinyOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/contiki/">Contiki</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/mbedOS/">mbedOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/RIOT/">RIOT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/LiteOS/">LiteOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/MICO/">MiCO</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about/">关于</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../802.15.4/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../6LoWPAN/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/iotknowledges/iotknowledges.github.io">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#zigbee">ZigBee</a></li>
+        
+            <li><a href="#ieee802154zigbee">IEEE802.15.4/ZigBee协议概述</a></li>
+        
+            <li><a href="#_1">缩写与用语解释</a></li>
+        
+            <li><a href="#_2">协议层与标准说明</a></li>
+        
+            <li><a href="#_3">版本</a></li>
+        
+            <li><a href="#_4">整理</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="zigbee">ZigBee</h1>
+<p><strong>ZigBee</strong>（也称紫蜂）是一种低速短距离传输的无线网络协议，底层是采用IEEE 802.15.4标准规范的媒体访问层与物理层。主要特色有低速、低耗电、低成本、支持大量网络节点、支持多种网络拓扑、低复杂度、快速、可靠、安全。</p>
+<h2 id="ieee802154zigbee">IEEE802.15.4/ZigBee协议概述</h2>
+<p>IEEE802.15.4协议是IEEE802.15.4工作组为低速率无线个人区域网（<strong>WPAN:Wireless Personal Area Network</strong>）制定的标准，该工作组成立于2002年12月，致力于定义一种廉价的，固定、便携或移动设备使用的，低复杂度、低成本、低功耗、低速率的无线连接技术，并于2003年12月通过了第一个802.15.4标准。随着无线传感器网络技术的发展，无线传感器网络的标准也得到了快速的发展。802.15.4标准定义了在个人区域网中通过射频方式在设备间进行互连的方式与协议，该标准使用避免冲突的载波监听多址接入以方式作为媒体访问机制，同时支持星型与对等型拓扑结构。</p>
+<p>在802.15.4标准中指定了两个物理频段和直接序列扩频（<strong>DSSS</strong>）物理层频段：868/915MHz和2.4GHz。2.4GHz的物理层支持空气中250kb/s的速率，而868/915MHz的物理层支持空气中20kb/s和40kb/s的传输速率。由于数据包开销和处理延迟，实际的数据吞吐量会小于规定的比特率。作为支持低速率、低功耗、短距离无线通信的协议标准，802.15.4在无线电频率和数据率、数据传输模型、设备类型、网络工作方式、安全等方面都做出了说明。并且将协议模型划分为物理层和媒体接入控制层两个子层进行实现。</p>
+<p>ZigBee协议是由ZigBee联盟制定的无线通信标准，该联盟成立于2001年8月。2002年下半年，英国Invensys公司、日本三菱电气公司、美国摩托罗拉公司以及荷兰飞利浦半导体公司共同宣布加入ZigBee联盟，研发名为“ZigBee”的下一代无线通信标准，这一事件成为该技术发展过程中的里程碑。ZigBee联盟现有的理事公司包括BM Group，Ember公司，飞思卡尔半导体，Honeywell，三菱电机，摩托罗拉，飞利浦，三星电子，西门子，及德州仪器。ZigBee联盟的目的是为了在全球统一标准上实现简单可靠、价格低廉、功耗低、无线连接的监测和控制产品进行合作，并于2004年12月发布了第一个正式标准。</p>
+<h2 id="_1">缩写与用语解释</h2>
+<ul>
+<li><strong>AF</strong> - Application Framework（应用层框架）。</li>
+<li><strong>APL</strong> - Application Layer（应用层）。</li>
+<li><strong>APS</strong> - Application Support sublayer（应用支撑层）。</li>
+<li><strong>MAC</strong> - Medium Access Control layer（媒体访问控制层）。</li>
+<li><strong>NIB</strong> - Network Information Base（网络信息库）</li>
+<li><strong>NWK</strong> - Network layer（网络层）。</li>
+<li><strong>PHY</strong> - Physical layer（物理层）。</li>
+<li><strong>WPAN</strong> - Wireless Personal Area Network。为IEEE 802.15族系所规范的一系列无线个人区网标准。</li>
+<li><strong>ZC</strong> - ZigBee Coordinator（ZigBee协调员）。</li>
+<li><strong>ZDO</strong> - ZigBee Device Object（ZigBee设备对象）。</li>
+<li><strong>ZED</strong> - ZigBee End Device（ZigBee终端设备）。</li>
+<li><strong>ZR</strong> - ZigBee Router（ZigBee路由）。</li>
+<li><strong>FFD</strong> - Full Function Device（全功能器件）。</li>
+<li><strong>RFD</strong> - Reduce Function Device（精简功能器件）。</li>
+</ul>
+<h2 id="_2">协议层与标准说明</h2>
+<p>ZigBee协议层从下到上分别为物理层（<strong>PHY</strong>）、媒体访问层（<strong>MAC</strong>）、网络层（<strong>NWK</strong>）、应用层（<strong>APL</strong>）等。网络设备的角色可分为 <em>ZigBee Coordinator、ZigBee Router、ZigBee End Device</em> 等三种。支持网络拓扑有星型、树型、网型等三种。</p>
+<h2 id="_3">版本</h2>
+<p><em>ZigBee V1.0</em>
+这是第一个ZigBee标准公开版，于2005年6月开放下载，文件内记载公布时间为June 27, 2005，内部文件编号为053474r06。
+<em>ZigBee V1.1</em>
+第二个ZigBee标准公开版，于2007年1月开放下载，文件内记载公布时间为December 1, 2006，内部文件编号为053474r13。又称为ZigBee 2006。
+<em>ZigBee V1.2</em>
+第三个ZigBee标准公开版，于2008年1月开放下载，文件内记载公布时间为January 17, 2008，内部文件编号为053474r17。又称为ZigBee Pro、ZigBee 2007。</p>
+<h2 id="_4">整理</h2>
+<h3 id="information-base">信息库（Information Base）</h3>
+<p>ZigBee某些层有信息库存储该层所需信息，共有以下几种：</p>
+<ul>
+<li>MAC信息库（MIB）</li>
+<li>NWK信息库（NIB）</li>
+<li>APS信息库（AIB）</li>
+</ul>
+<h3 id="profile">Profile</h3>
+<p>ZigBee所定义的Profile有两种：</p>
+<ul>
+<li>Application Pro：针对各种不同应用情境所定义出的概略行为蓝图，如Home Control Lighting (HCL)和Home Automation (HA)。一般所称的Profile通常是指此种Profile。</li>
+<li>Stack Pro：主要规定通用性的网络参数，如Network Specific、Home Controls (HC)、Building Automation (BA)、Plant Control等Stack Profile。原则上Application Profile中会说明可采用何种Stack Profile来作为基础网络建构方案，如HCL中即采用HC作为网络建构方案。</li>
+</ul>
+<h3 id="_5">各层定址</h3>
+<ul>
+<li><strong>MAC</strong>：可采用64位IEEE地址或16位NWK地址。</li>
+<li><strong>NWK</strong>：16位NWK地址。</li>
+<li><strong>APS</strong>：8位Endpoint号码。</li>
+</ul>
+<blockquote>
+<p><a href="https://zh.wikipedia.org/wiki/ZigBee">参考链接</a></p>
+</blockquote></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <center><img src="/favicon.ico" alt="iZheteng" /></a><a rel="nofollow" href="https://cuiqingwei.github.io/"> cuiqingwei.github.io </a></center>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>https://iotknowledges.github.io//</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>https://iotknowledges.github.io//base/IoT/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://iotknowledges.github.io//base/WoT/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://iotknowledges.github.io//base/IoE/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://iotknowledges.github.io//base/M2M/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://iotknowledges.github.io//base/LPWAN/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://iotknowledges.github.io//base/LTE/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://iotknowledges.github.io//base/IETF/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://iotknowledges.github.io//base/iotpic/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://iotknowledges.github.io//stands&protocols/zWave/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://iotknowledges.github.io//stands&protocols/EnOcean/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://iotknowledges.github.io//stands&protocols/802.15.4/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://iotknowledges.github.io//stands&protocols/ZigBee/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://iotknowledges.github.io//stands&protocols/6LoWPAN/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://iotknowledges.github.io//stands&protocols/RPL/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://iotknowledges.github.io//stands&protocols/Lora/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://iotknowledges.github.io//stands&protocols/NB-IoT/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://iotknowledges.github.io//stands&protocols/Sigfox/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://iotknowledges.github.io//stands&protocols/HaLow/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://iotknowledges.github.io//stands&protocols/WiGig/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://iotknowledges.github.io//os/tinyos/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://iotknowledges.github.io//os/contiki/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://iotknowledges.github.io//os/mbedOS/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://iotknowledges.github.io//os/RIOT/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://iotknowledges.github.io//os/LiteOS/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://iotknowledges.github.io//os/MICO/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+    <url>
+     <loc>https://iotknowledges.github.io//about/</loc>
+     <lastmod>2017-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+</urlset>

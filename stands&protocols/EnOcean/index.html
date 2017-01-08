@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="cuiqingwei">
+        <link rel="canonical" href="https://iotknowledges.github.io/stands&protocols/EnOcean/">
+        <link rel="shortcut icon" href="favicon.ico">
+        
+
+	<title>EnOcean - IoT</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-42607542-3', 'iotknowledges.github.io');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">IoT</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">首页</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">概念 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../base/IoT/">IoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/WoT/">WoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/IoE/">IoE</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/M2M/">M2M</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/LPWAN/">LPWAN</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/LTE/">LTE</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/IETF/">IETF</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/iotpic/">onePIC</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">协议&标准 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../zWave/">z-Wave</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">EnOcean</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../802.15.4/">IEEE802.15.4</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../ZigBee/">ZigBee</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../6LoWPAN/">6LoWPAN</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../RPL/">RPL</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Lora/">LoRa</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../NB-IoT/">NB-IoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Sigfox/">Sigfox</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../HaLow/">Halow</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../WiGig/">WiGig</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">操作系统 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../os/tinyos/">TinyOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/contiki/">Contiki</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/mbedOS/">mbedOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/RIOT/">RIOT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/LiteOS/">LiteOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/MICO/">MiCO</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about/">关于</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../zWave/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../802.15.4/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/iotknowledges/iotknowledges.github.io">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#enocean">EnOcean</a></li>
+        
+            <li><a href="#_1">简介</a></li>
+        
+            <li><a href="#_2">核心亮点</a></li>
+        
+            <li><a href="#_3">区别</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="enocean">EnOcean</h1>
+<p>2012年3月，国际电工技术委员会(International Electrotechnical Commission)将 <strong>EnOcean</strong> 无线通信标准采纳为国际标准“ISO/IEC 14543-3-10”，这也是世界上唯一使用能量采集技术的无线国际标准。</p>
+<h2 id="_1">简介</h2>
+<p>该标准规范了协议栈中最底3层 <strong>物理层、数据链路层和网络层</strong> 的通讯协议。易能森(EnOcean)无线能量采集模块由德国易能森有限公司(EnOcean GmbH)生产销售，并为 <strong>易能森联盟(EnOcean Alliance)</strong> 成员提供技术支持。基于这个平台，原始设备生产商可以轻松且快速实现定制化的基于无线能量采集技术的无线开关传感解决方案。</p>
+<h2 id="_2">核心亮点</h2>
+<p>易能森(EnOcean)无线能量采集技术：</p>
+<ul>
+<li>1.能量采集和转换</li>
+</ul>
+<p>EnOcean能量采集模块能够采集周围环境产生的能量，比如机械能，室内的光能，温度差的能量等。这些能量经过处理以后，用来供给EnOcean超低功耗的无线通讯模块，实现真正的无数据线，<strong>无电源线</strong>，<strong>无电池</strong> 的通讯系统。</p>
+<ul>
+<li>2.高质量的无线通讯</li>
+</ul>
+<p><strong>源于西门子的无线通讯技术</strong>，仅仅用采集的能量来驱动低功耗的芯片组，实现高质量的无线通讯技术。在保证通讯距离的同时还具有超强的抗干扰能力，通过重复发送多个信号以及加密功能，保证整个通讯系统给的稳定性，安全性。</p>
+<ul>
+<li>3.超低功耗的芯片组</li>
+</ul>
+<p>EnOcean技术和同类技术相比，功耗最低，传输距离最远，可以组网并且支持中继等功能。
+通过成熟全面的开发环境，强大的技术支持和100%的产品兼容性，让现有的楼宇自控和智能家居行业的现有产品成为“绿色，节能，环保并且免维护”的物联网新产品。无线标准ISO/IEC14543-3-10使用 <strong>868MHz</strong> 和 <strong>315MHz</strong> 频段，发射功率符合中国无线电委员会限制要求，无需申请即可使用。每个无线电信号占用信道的时间是1毫秒，传输速率 <strong>125KB/s</strong>。此外，为避免传输错误，每个无电线信号都会在30毫秒内随机的重复2次。因数据在随机间隔中传递，因此极少产生数据传输冲突的情况。EnOcean传感器的数据传输距离在室外是300米，室内为30米。作为开放协议，EnOcean无线技术可并入使用 <strong>TCP/IP，WiFi，GSM，Modbus KNX，Dali，BACnet</strong> 或 <strong>LON</strong> 等系统。</p>
+<h2 id="_3">区别</h2>
+<p><strong>与ZigBee、Z-Wave和Wibree等低功耗无线技术相比，EnOcean技术的主要区别是什么?</strong></p>
+<p>与该领域的其他技术相比，EnOcean技术的特点是无需电池。比方说，50～60层的高层大厦的管理系统有时会使用4000-6000个传感器单元。如果各传感器单元使用以电池为驱动的技术，电池的更换和管理将成为巨大的负担，令大厦管理公司无所适从。我们对Zigbee等技术很了解，其他技术的弱点就是以电池驱动装置。我们的技术能够保证在照明关闭5天的情况下仍然可以工作。EnOcean技术是作为非常简单的标准设计的。我们的无线信号所需的电力是ZigBee的 <strong>1/30～1/100</strong>。</p>
+<blockquote>
+<p><a href="http://baike.baidu.com/link?url=QNtSVoBGo8LhaxiG_rMU_oG9pwsTou-xL8CuWeqKCw5b74y3gKMRZjeFHPfTLIX8b56hpiBIvtX9jo2VLoHR0_">参考链接</a></p>
+</blockquote></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <center><img src="/favicon.ico" alt="iZheteng" /></a><a rel="nofollow" href="https://cuiqingwei.github.io/"> cuiqingwei.github.io </a></center>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="cuiqingwei">
+        <link rel="canonical" href="https://iotknowledges.github.io/stands&protocols/802.15.4/">
+        <link rel="shortcut icon" href="favicon.ico">
+        
+
+	<title>IEEE802.15.4 - IoT</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-42607542-3', 'iotknowledges.github.io');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">IoT</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">首页</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">概念 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../base/IoT/">IoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/WoT/">WoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/IoE/">IoE</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/M2M/">M2M</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/LPWAN/">LPWAN</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/LTE/">LTE</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/IETF/">IETF</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/iotpic/">onePIC</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">协议&标准 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../zWave/">z-Wave</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../EnOcean/">EnOcean</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">IEEE802.15.4</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../ZigBee/">ZigBee</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../6LoWPAN/">6LoWPAN</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../RPL/">RPL</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Lora/">LoRa</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../NB-IoT/">NB-IoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Sigfox/">Sigfox</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../HaLow/">Halow</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../WiGig/">WiGig</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">操作系统 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../os/tinyos/">TinyOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/contiki/">Contiki</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/mbedOS/">mbedOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/RIOT/">RIOT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/LiteOS/">LiteOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/MICO/">MiCO</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about/">关于</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../EnOcean/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../ZigBee/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/iotknowledges/iotknowledges.github.io">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#ieee-802154">IEEE 802.15.4</a></li>
+        
+            <li><a href="#_1">网络简介</a></li>
+        
+            <li><a href="#_2">拓扑结构</a></li>
+        
+            <li><a href="#_3">网络协议</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="ieee-802154">IEEE 802.15.4</h1>
+<p><strong>IEEE 802.15.4</strong> 描述了低速率无线个人局域网的物理层和媒体接入控制协议。它属于IEEE 802.15工作组。
+IEEE 802.15.4是 <strong>ZigBee, WirelessHART, MiWi, Thread</strong> 规范的基础。</p>
+<p>IEEE 802.15.4标准定义的 <strong>LR-WPAN</strong> 网络具有如下特点：</p>
+<ol>
+<li>在不同的载波频率下实现了 <strong>20kbps、40kbps</strong> 和 <strong>250kbps</strong> 三种不同的传输速率；</li>
+<li>支持星型和点对点两种网络拓扑结构；</li>
+<li>有16位和64位两种地址格式，其中64位地址是全球惟一的扩展地址；</li>
+<li>支持冲突避免的载波多路侦听技术（carrier sense multiple access with collision avoidance, <strong>CSMA-CA</strong>）；</li>
+<li>支持确认（ACK）机制，保证传输可靠性。</li>
+</ol>
+<h2 id="_1">网络简介</h2>
+<p>IEEE 802.15.4网络是指在一个POS内使用相同无线信道并通过IEEE 802.15.4标准相互通信的一组设备的集合，又名LR-WPAN网络。在这个网络中，根据设备所具有的通信能力，可以分为全功能设备（<strong>Full Function Device , FFD</strong>）和精简功能设备（<strong>Reduced Function Device , RFD</strong>）。FFD设备之间以及FFD设备与RFD设备之间都可以通信。RFD设备之间不能直接通信，只能与FFD设备通信，或者通过一个FFD设备向外转发数据。这个与RFD相关联的FFD设备称为该RFD的协调器（coordinator）。RFD设备主要用于简单的控制应用，如灯的开关、被动式红外线传感器等，传输的数据量较少，对传输资源和通信资源占用不多，这样RFD设备可以采用非常廉价的实现方案。</p>
+<p>IEEE 802.15.4网络中，有一个称为PAN网络协调器（<strong>PAN coordinator</strong>）的FFD设备，是LR-WPAN网络中的主控制器。PAN网络协调器（以后简称网络协调器）除了直接参与应用以外，还要完成成员身份管理、链路状态信息管理以及分组转发等任务。</p>
+<p>无线通信信道的特征是动态变化的。节点位置或天线方向的微小改变、物体移动等周围环境的变化都有可能引起通信链路信号强度和质量的剧烈变化，因而无线通信的覆盖范围不是确定的。这就造成了LR-WPAN网络中设备的数量以及它们之间关系的动态变化。</p>
+<h2 id="_2">拓扑结构</h2>
+<p>IEEE 802.15.4网络根据应用的需要可以组织成星型网络，也可以组织成点对点网络。在星型结构中，所有设备都与中心设备PAN网络协调器通信。在这种网络中，网络协调器一般使用持续电力系统供电，而其他设备采用电池供电。星型网络适合家庭自动化、个人计算机的外设以及个人健康护理等小范围的室内应用。
+与星型网不同，点对点网络只要彼此都在对方的无线辐射范围之内，任何两个设备之都可以直接通信。点对点网络中也需要网络协调器，负责实现管理链路状态信息，认证设备身份等功能。点对点网络模式可以支持ad hoc网络允许通过多跳路由的方式在网络中传输数据。不过一般认为自组织问题由网络层来解决，不在IEEE 802.15.4标准讨论范围之内。点对点网络可以构造更复杂的网络结构，适合于设备分布范围广的应用，比如在工业检测与控制、货物库存跟踪和智能农业等方面有非常好的应用背景。
+网络拓扑的形成过程
+虽然网络拓扑结构的形成过程属于网络层的功能，但IEEE 802.15.4为形成各种网络拓扑结构提供了充分支持。这部分主要讨论IEEE 802.15.4对形成网络拓扑结构提供的支持，并详细地描述了星型网络和点对点网络的形成过程。</p>
+<ul>
+<li><em>星型网络形成</em></li>
+</ul>
+<p>星型网络以网络协调器为中心，所有设备只能与网络协调器进行通信，因此在星型网络的形成过程中，第一步就是建立网络协调器。任何一个FFD设备都有成为网络协调器的可能，一个网络如何确定自己的网络协调器由上层协议决定。一种简单的策略是：一个FFD设备在第一次被激活后，首先广播查询网络协调器的请求，如果接收到回应说明网络中已经存在网络协调器，再通过一系列认证过程，设备就成为了这个网络中的普通设备。如果没有收到回应，或者认证过程不成功，这个FFD设备就可以建立自己的网络，并且成为这个网络的网络协调器。当然，这里还存在一些更深入的问题，一个是网络协调器过期问题，如原有的网络协调器损坏或者能量耗尽；另一个是偶然因素造成多个网络协调器竞争问题，如移动物体阻挡导致一个FFD自己建立网络，当移动物体离开的时候，网络中将出现多个协调器。</p>
+<p>网络协调器要为网络选择一个惟一的标识符，所有该星型网络中的设备都是用这个标识符来规定自己的属主关系。不同星型网络之间的设备通过设置专门的网关完成相互通信。选择一个标识符后，网络协调器就允许其他设备加入自己的网络，并为这些设备转发数据分组。</p>
+<p>星型网络中的两个设备如果需要互相通信，都是先把各自的数据包发送给网络协调器，然后由网络协调器转发给对方。</p>
+<ul>
+<li><em>点对点网络的形成</em></li>
+</ul>
+<p>点对点网络中，任意两个设备只要能够彼此收到对方的无线信号，就可以进行直接通信，不需要其他设备的转发。但点对点网络中仍然需要一个网络协调器，不过该协调器的功能不再是为其他设备转发数据，而是完成设备注册和访问控制等基本的网络管理功能。网络协调器的产生同样由上层协议规定，比如把某个信道上第一个开始通信的设备作为该信道上的网络协议器。簇树网络是点对点网络的一个例子，下面以簇树网络为例描述点到点网络的形成过程.</p>
+<p>在簇树网络中，绝大多数设备是FFD设备，而RFD设备总是作为簇树的叶设备连接到网络中。任意一个FFD都可以充当RFD协调器或者网络协调器，为其他设备提供同步信息。在这些协调器中，只有一个可以充当整个点对点网络的网络协调器。网络协调器可能和网络中其他设备一样，也可能拥有比其他设备更多的计算资源和能量资源。网络协调器首先将自己设为簇头（cluster header ,CLH），并将簇标识符（cluster identifier, CID）设置为0，同时为该簇选择一个未被使用的PAN网络标识符，形成网络中的第一个簇。接着，网络协调器开始广播信标帧。邻近设备收到信标帧后，就可以申请加入该簇。设备可否成为簇成员，由网络协调器决定。如果请求被允许，则该设备将作为簇的子设备加入网络协调器的邻居列表。新加入的设备会将簇头作为它的父设备加入到自己的邻居列表中。</p>
+<p>上面讨论的只是一个由单簇构成的最简单的簇树。PAN网络协调器可以指定另一个设备成为邻接的新簇头，以此形成更多的簇。新簇头同样可以选择其他设备成为簇头，进一步扩大网络的覆盖范围。但是过多的簇头会增加簇间消息传递的延迟和通信开销。为了减少延迟和通信开销，簇头可以选择最远的通信设备作为相邻簇的簇头，这样可以最大限度地缩小不同簇间消息传递的跳数，达到减少延迟和开销的目的。</p>
+<h2 id="_3">网络协议</h2>
+<p>IEEE 802.15.4网络协议栈基于开放系统互连模型（OSI），每一层都实现一部分通信功能，并向高层提供服务。
+IEEE 802.15.4标准只定义了 <strong>PHY层</strong> 和 <strong>数据链路层的MAC子层</strong>。PHY层由射频收发器以及底层的控制模块构成。MAC子层为高层访问物理信道提供点到点通信的服务接口。</p>
+<blockquote>
+<p><a href="http://baike.baidu.com/link?url=Rc0Jp2aQSKGLejrVpp0vx-xiZ-e70aTrue2TxHB0zKBNf6VAr2Kx87oV3HYXvhPwzRYo6z-K69NO2QYNahNbrRyOlpQTEgLqmpynDtr0e1okKeW4cmPYwo8c4kRuR_ZUSdjpbgRV5z1yIeOlXFhMvAyuWeTPFpZ9qioP3prfZBS">参考链接</a></p>
+</blockquote></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <center><img src="/favicon.ico" alt="iZheteng" /></a><a rel="nofollow" href="https://cuiqingwei.github.io/"> cuiqingwei.github.io </a></center>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="cuiqingwei">
+        <link rel="canonical" href="https://iotknowledges.github.io/os/contiki/">
+        <link rel="shortcut icon" href="favicon.ico">
+        
+
+	<title>Contiki - IoT</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-42607542-3', 'iotknowledges.github.io');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">IoT</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">首页</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">概念 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../base/IoT/">IoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/WoT/">WoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/IoE/">IoE</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/M2M/">M2M</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/LPWAN/">LPWAN</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/LTE/">LTE</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/IETF/">IETF</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/iotpic/">onePIC</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">协议&标准 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../stands&protocols/zWave/">z-Wave</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/EnOcean/">EnOcean</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/802.15.4/">IEEE802.15.4</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/ZigBee/">ZigBee</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/6LoWPAN/">6LoWPAN</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/RPL/">RPL</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/Lora/">LoRa</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/NB-IoT/">NB-IoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/Sigfox/">Sigfox</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/HaLow/">Halow</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/WiGig/">WiGig</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">操作系统 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../tinyos/">TinyOS</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">Contiki</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../mbedOS/">mbedOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../RIOT/">RIOT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../LiteOS/">LiteOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../MICO/">MiCO</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about/">关于</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../tinyos/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../mbedOS/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/iotknowledges/iotknowledges.github.io">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#contiki">Contiki</a></li>
+        
+            <li><a href="#_1">简介</a></li>
+        
+            <li><a href="#_2">特点</a></li>
+        
+            <li><a href="#_3">设计编辑</a></li>
+        
+            <li><a href="#_4">平台比较</a></li>
+        
+            <li><a href="#_5">移植版本</a></li>
+        
+            <li><a href="#_6">参考资料</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="contiki">Contiki</h1>
+<p><strong>Contiki</strong> 是一个适用于有内存的嵌入式系统的开源的、高可移植的、支持网络的多任务操作系统。包括一个 <strong>多任务核心、TCP/IP堆栈、程序集以及低能耗</strong> 的无线通讯堆栈。<strong>Contiki</strong> 采用 <strong>C语言</strong> 开发的非常小型的嵌入式操作系统，运行 <strong>只需要几K的内存</strong>。</p>
+<p><img alt="" src="../../images/contiki.jpg" /></p>
+<h2 id="_1">简介</h2>
+<p><strong>Contiki</strong> 是一个小型的，开源的，极易移植的多任务电脑操作系统。它专门设计以适用于一系列的内存受限的网络系统，包括从8位电脑到微型控制器的 <strong>嵌入系统</strong>。它的名字来自于托尔·海尔达尔的康提基号。</p>
+<p>Contiki只需几kilobyte的代码和几百字节的内存就能提供多任务环境和内建TCP/IP支持。</p>
+<h2 id="_2">特点</h2>
+<p>Contiki可以在每个进程内选择是否支持先占式多线程，进程间通讯通过事件利用消息来实现。Contiki中还包括一个可选的GUI子系统，可以提供对本地终端、基于VNC的网络化虚拟显示或者Telnet的图形化支持。
+完整的Contiki系统包括以下特性：</p>
+<ul>
+<li>多任务内核</li>
+<li>每个应用程序中可选的先占式多线程</li>
+<li>Protothreads模型</li>
+<li>TCP/IP网络支持，包括IPv4和IPv6，还有 <strong>6Lowpan报文压缩、RPL路由、CoAP应用层</strong>，已经成为无线传感器网络和物联网感知层低功耗无线组网协议研发和实验的主要平台，其中 <strong>6Lowpan已经成为IETF规范</strong>，也被 <strong>zigbee SEP2.0</strong> 标准以及 <strong>ISA100.11a</strong> 标准所采纳</li>
+<li>Rime无线协议栈，可支持多跳组网，可以运行在IPv4上</li>
+<li>视窗系统与GUI</li>
+<li>基于VNC的网络化远程显示</li>
+<li>简化的Web服务器</li>
+<li>基于Flash的 <strong>Coffee文件系统</strong></li>
+<li>交互式Shell</li>
+<li>类似 SQL 的数据库 <strong>Antelope</strong></li>
+<li>各类小型的web程序，如简单的Telnet客户端、FTP、Email等</li>
+</ul>
+<h2 id="_3">设计编辑</h2>
+<p>Contiki适用于只有极少量内存的嵌入式系统。在一个较为典型的配置中，Contiki系统只需 <strong>2Kb的RAM与40Kb的ROM</strong>。 Contiki包括了一个事件驱动的内核，因此可以在运行时动态载入上层应用程序。Contiki中使用轻量级的protothreads进程模型，可以在事件驱动内核上提供一种线性的、类似于线程的编程风格。</p>
+<h2 id="_4">平台比较</h2>
+<p>Contiki可运行于各种平台上，包括嵌入式微控制器（例如TI MSP430及Atmel AVR）以及旧的家用电脑。程序代码量只有几K，存储器的使用量也只有几十Kb。</p>
+<p>Contiki是一个专门针对物联网或者无线传感器网络应用的操作系统和协议栈，在科研以及产业化方便得到广泛的应用。在该领域，还有一个知名的类似的系统- TinyOS，两者都实现了网络协议，两者的比较如下：</p>
+<table>
+<thead>
+<tr>
+<th>performance</th>
+<th>TinyOS</th>
+<th>Contiki</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>所属领域</td>
+<td>无线传感器网络、物联网</td>
+<td>无线传感器网络、物联网</td>
+</tr>
+<tr>
+<td>软件类型</td>
+<td>小型OS +无线网络协议栈</td>
+<td>型OS +无线网络协议栈</td>
+</tr>
+<tr>
+<td>OS特性</td>
+<td>非抢占、共享栈空间</td>
+<td>非抢占、共享栈空间</td>
+</tr>
+<tr>
+<td>协议支持</td>
+<td>802.15.4、6Lowpan、RPL、CoAP</td>
+<td>802.15.4、6Lowpan、RPL、CoAP</td>
+</tr>
+<tr>
+<td>开发语言</td>
+<td>专用NesC语言，入门较难，其它领域几乎不使用（有可能导致失业）</td>
+<td>通用的C语言，入门容易，在各领域广泛使用</td>
+</tr>
+<tr>
+<td>编译器</td>
+<td>专用的编译器，性能和稳定性未经过验证，目前无商用编译器支持</td>
+<td>通用的C编译器，如GCC、IAR等</td>
+</tr>
+<tr>
+<td>开发环境</td>
+<td>Linux、Cygwin，命令行模式，开发调试困难，门槛高</td>
+<td>Linux Eclipse、或者Windows IAR，IAR图形化集成开发环境，功能强大</td>
+</tr>
+<tr>
+<td>可移植性</td>
+<td>需要移植编译器，很难</td>
+<td>C语言很好移植</td>
+</tr>
+<tr>
+<td>支持的硬件</td>
+<td>少数几种类型的处理器</td>
+<td>8位、16位、32位几乎所有的处理器类型</td>
+</tr>
+<tr>
+<td>开发团队</td>
+<td>主要由Berkeley大学开发，目前核心人员已经去CISCO，不再开发，目前TinyOS很少更新代码</td>
+<td>由LWIP的作者Adam dunkels团队以及ETH大学开发，目前已经成立公司全职开发，每周都有代码更新</td>
+</tr>
+<tr>
+<td>发展趋势</td>
+<td>TinyOS从一开始就主要做科研仿真，用户逐年骤减，基本上无产品</td>
+<td>Contiki可以做科研，也有不少产品，2014年Adam团队的目标是要将Contiki作成物联网领域的首要选择</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_5">移植版本</h2>
+<p>Contiki操作系统已被移植到以下系统中：</p>
+<ul>
+<li>Win32</li>
+<li>native</li>
+<li>TI CC2530</li>
+<li>TI CC2430</li>
+<li>TI MSP430</li>
+<li>STM32</li>
+<li>Atmel AVR</li>
+<li>Freescale MC1322x</li>
+<li>LPC2103 等</li>
+</ul>
+<h2 id="_6">参考资料</h2>
+<ol>
+<li><a href="http://baike.baidu.com/redirect/aac1gQAw5NMwc92LDFufHwgQ4dHBa7aJmeh6cBycl4T2WzxGhgBe66YO1uwTm_CkiZ3QM5Oh3e9nzoEF2A">开源嵌入式操作系统 Contiki</a>   ．<em>开源社区网[引用日期2012-09-14]</em></li>
+<li><a href="http://baike.baidu.com/redirect/7556qg_apCEPxMQbwBoZo0FmxdbAIT0Oh_lJe8cQsw26bDSeIYiKw9Ez9nHpFMiEFZelo1S4BTkcdmAgCj46dC6xfXGn">物联网感知层的IPv6协议标准化动态</a>  ．<em>物联网开发论坛[引用日期2012-09-19]</em></li>
+<li><a href="http://baike.baidu.com/redirect/53dbO0mzvMpzlTXPweFC5scwGhoRxh3Djkn6O2RUwr6sEm_7-ntGvohmgz8b13YYRsuPfZD1Aawc0Hg0WBcE2_GhzJZb_w">Coffee文件系统概述及其学习资料 </a> ．<em>物联网开发论坛[引用日期2012-09-19]</em></li>
+<li><a href="http://baike.baidu.com/redirect/2872Sakssh7J1vMzfLV6TYLxRAzEZE_31ubr9kVM9mW2oyMarEHhLe8C7-PSu_cyXAu5EzqGxIGulshkAno4R3Ww6Wfdpw">开源嵌入式操作系统Contiki 2.6 发布</a>  ．<em>物联网开发论坛[引用日期2012-09-19]</em></li>
+</ol>
+<blockquote>
+<p><a href="http://baike.baidu.com/link?url=jZvXLXRmh9sS2QOSq6T8tbiZS96q5caMzxF6UawIY8lilxdIQ2FWp_ZJameI14-xWuK3u53osUU8UmJAo5SH1K">参考链接</a></p>
+</blockquote></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <center><img src="/favicon.ico" alt="iZheteng" /></a><a rel="nofollow" href="https://cuiqingwei.github.io/"> cuiqingwei.github.io </a></center>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

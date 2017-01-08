@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="cuiqingwei">
+        <link rel="canonical" href="https://iotknowledges.github.io/stands&protocols/NB-IoT/">
+        <link rel="shortcut icon" href="favicon.ico">
+        
+
+	<title>NB-IoT - IoT</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-42607542-3', 'iotknowledges.github.io');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">IoT</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">首页</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">概念 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../base/IoT/">IoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/WoT/">WoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/IoE/">IoE</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/M2M/">M2M</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/LPWAN/">LPWAN</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/LTE/">LTE</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/IETF/">IETF</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/iotpic/">onePIC</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">协议&标准 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../zWave/">z-Wave</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../EnOcean/">EnOcean</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../802.15.4/">IEEE802.15.4</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../ZigBee/">ZigBee</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../6LoWPAN/">6LoWPAN</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../RPL/">RPL</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Lora/">LoRa</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">NB-IoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Sigfox/">Sigfox</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../HaLow/">Halow</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../WiGig/">WiGig</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">操作系统 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../os/tinyos/">TinyOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/contiki/">Contiki</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/mbedOS/">mbedOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/RIOT/">RIOT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/LiteOS/">LiteOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/MICO/">MiCO</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about/">关于</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../Lora/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../Sigfox/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/iotknowledges/iotknowledges.github.io">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#nb-iot">NB-IoT</a></li>
+        
+            <li><a href="#nb-iot_1">NB-IoT具备四大特点</a></li>
+        
+            <li><a href="#nb-iot_2">NB-IOT的概述</a></li>
+        
+            <li><a href="#nb-iot_3">NB-IOT的前景与优势</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="nb-iot">NB-IoT</h1>
+<p><img alt="" src="../../images/NB-IoT.jpg" /></p>
+<p>基于蜂窝的窄带物联网（<strong>Narrow Band Internet of Things, NB-IoT</strong>）成为万物互联网络的一个重要分支。NB-IoT构建于蜂窝网络，只消耗 <strong>大约180KHz的带宽</strong>，可直接部署于 <strong>GSM网络、UMTS网络或LTE网络</strong>，以降低部署成本、实现平滑升级。</p>
+<p><strong>NB-IoT</strong> 是IoT领域一个新兴的技术，支持低功耗设备在广域网的蜂窝数据连接，也被叫作 <strong>低功耗广域网(LPWA)</strong>。NB-IoT支持待机时间长、对网络连接要求较高设备的高效连接。据说NB-IoT设备电池寿命可以提高至 <strong>至少10年</strong>，同时还能提供非常全面的室内蜂窝数据连接覆盖。</p>
+<h2 id="nb-iot_1">NB-IoT具备四大特点</h2>
+<ul>
+<li>一是 <em>广覆盖</em>，将提供改进的室内覆盖，在同样的频段下，NB-IoT比现有的网络增益20dB，覆盖面积扩大100倍；</li>
+<li>二是具备 <em>支撑海量连接</em> 的能力，NB-IoT一个扇区能够支持10万个连接，支持低延时敏感度、超低的设备成本、低设备功耗和优化的网络架构；</li>
+<li>三是 <em>更低功耗</em>，NB-IoT终端模块的待机时间可长达10年；四是更低的模块成本，企业预期的单个接连模块不超过5美元。</li>
+</ul>
+<h2 id="nb-iot_2">NB-IOT的概述</h2>
+<p>对于物联网标准的发展，华为的推进最早。2014年5月，华为提出了窄带技术NB M2M；2015年5月融合NB OFDMA形成了NB-CIOT；7月份，NB-LTE跟NB-CIOT进一步融合形成NB-IOT；预计NB-IOT标准会在3GPP R13出现，并于2016年3月份冻结。</p>
+<p>此前，相对于爱立信、诺基亚和英特尔推动的NB-LTE，华为更注重构建NB-CIOT的生态系统，包括高通、沃达丰、德国电信、中国移动、中国联通、Bell等主流运营商、芯片商及设备系统产业链上下游均加入了该阵营。</p>
+<p>基于蜂窝的窄带物联网（Narrow Band Internet of Things, NB-IoT）成为万物互联网络的一个重要分支。NB-IoT构建于蜂窝网络，只消耗大约180KHz的带宽，可直接部署于GSM网络、UMTS网络或LTE网络，以降低部署成本、实现平滑升级。</p>
+<p>NB-IOT聚焦于低功耗广覆盖（LPWA）物联网（IoT）市场，是一种可在全球范围内广泛应用的新兴技术。具有覆盖广、连接多、速率低、成本低、功耗低、架构优等特点。 NB-IOT使用License频段，可采取带内、保护带或独立载波等三种部署方式，与现有网络共存。</p>
+<h2 id="nb-iot_3">NB-IOT的前景与优势</h2>
+<p>移动通信正在从人和人的连接，向人与物以及物与物的连接迈进，万物互联是必然趋势。然而当前的4G网络在物与物连接上能力不足。事实上，相比蓝牙、ZigBee等短距离通信技术，移动蜂窝网络具备广覆盖、可移动以及大连接数等特性，能够带来更加丰富的应用场景，理应成为物联网的主要连接技术。作为LTE的演进型技术，4.5G除了具有高达1Gbps的峰值速率，还意味着基于蜂窝物联网的更多连接数，支持海量M2M连接以及更低时延，将助推高清视频、VoLTE以及物联网等应用快速普及。蜂窝物联网正在开启一个前所未有的广阔市场。</p>
+<p>对于电信运营商而言，车联网、智慧医疗、智能家居等物联网应用将产生海量连接，远远超过人与人之间的通信需求。</p>
+<p>NB-IoT具备四大特点：一是广覆盖，将提供改进的室内覆盖，在同样的频段下，NB-IoT比现有的网络增益20dB，覆盖面积扩大100倍；二是具备支撑海量连接的能力，<strong>NB-IoT一个扇区能够支持<font color="red">10万</font>个连接</strong>，支持低延时敏感度、超低的设备成本、低设备功耗和优化的网络架构；三是更低功耗，NB-IoT终端模块的待机时间可长达10年；四是更低的模块成本，企业预期的单个接连模块不超过5美元。</p>
+<p>NB-IOT聚焦于低功耗广覆盖（LPWA）物联网（IOT）市场，是一种可在全球范围内广泛应用的新兴技术。其具有覆盖广、连接多、速率低、成本低、功耗低、架构优等特点。NB-IOT使用License频段，可采取带内、保护带或独立载波三种部署方式，与现有网络共存。</p>
+<p>因为NB-IoT自身具备的低功耗、广覆盖、低成本、大容量等优势，使其可以广泛应用于多种垂直行业，如远程抄表、资产跟踪、智能停车、智慧农业等。3GPP标准的首个版本预计在今年6月发布，到时候将有一批测试网络和小规模商用网络出现。</p>
+<p>目前包括我国运营商在内诸多运营商在开展NB-IoT和研究。就NB-IoT的发展现状，余泉详细阐述了三个精彩观点：一是NB-IoT是蜂窝产业应对万物互联的一个重要机会。二是NB-IoT要成功必须要建立开放产业平台。三是2016年是NB-IoT产业非常关键的一年，标准、芯片、网络以及商用应用场景都会走向成熟。</p>
+<blockquote>
+<p><a href="http://baike.baidu.com/link?url=8xvYRx1meTkc2FGl7f424zf76Asun9u6s26zeZ5KjnifcNUjo2tpL25qIZMo7hhRlPHGbHZQnqr0bB8v_ZuVIK">参考链接</a></p>
+</blockquote></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <center><img src="/favicon.ico" alt="iZheteng" /></a><a rel="nofollow" href="https://cuiqingwei.github.io/"> cuiqingwei.github.io </a></center>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

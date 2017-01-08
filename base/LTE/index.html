@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="cuiqingwei">
+        <link rel="canonical" href="https://iotknowledges.github.io/base/LTE/">
+        <link rel="shortcut icon" href="favicon.ico">
+        
+
+	<title>LTE - IoT</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-42607542-3', 'iotknowledges.github.io');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">IoT</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">首页</a>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">概念 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../IoT/">IoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../WoT/">WoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../IoE/">IoE</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../M2M/">M2M</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../LPWAN/">LPWAN</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">LTE</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../IETF/">IETF</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../iotpic/">onePIC</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">协议&标准 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../stands&protocols/zWave/">z-Wave</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/EnOcean/">EnOcean</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/802.15.4/">IEEE802.15.4</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/ZigBee/">ZigBee</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/6LoWPAN/">6LoWPAN</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/RPL/">RPL</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/Lora/">LoRa</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/NB-IoT/">NB-IoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/Sigfox/">Sigfox</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/HaLow/">Halow</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/WiGig/">WiGig</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">操作系统 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../os/tinyos/">TinyOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/contiki/">Contiki</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/mbedOS/">mbedOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/RIOT/">RIOT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/LiteOS/">LiteOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/MICO/">MiCO</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about/">关于</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../LPWAN/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../IETF/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/iotknowledges/iotknowledges.github.io">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#lte">LTE</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="lte">LTE</h1>
+<ul>
+<li>中文：通用移动通信技术的长期演进</li>
+<li>英文：Long Term Evolution</li>
+</ul>
+<p><strong>LTE</strong>（Long Term Evolution，长期演进)是由 <strong>3GPP</strong>（The 3rd Generation Partnership Project，第三代合作伙伴计划）组织制定的 <strong>UMTS</strong>（Universal Mobile Telecommunications System，通用移动通信系统）技术标准的长期演进，于2004年12月在3GPP多伦多会议上正式立项并启动。LTE系统引入了 <strong>OFDM</strong>（Orthogonal Frequency Division Multiplexing，正交频分复用）和 <strong>MIMO</strong>（Multi-Input &amp; Multi-Output，多输入多输出）等关键技术，显著增加了频谱效率和数据传输速率（20M带宽2X2MIMO在64QAM情况下，理论下行最大传输速率为201Mbps，除去信令开销后大概为150Mbps，但根据实际组网以及终端能力限制，一般认为下行峰值速率为100Mbps，上行为50Mbps），并支持多种带宽分配：1.4MHz，3MHz，5MHz，10MHz，15MHz和20MHz等，且支持全球主流2G/3G频段和一些新增频段，因而频谱分配更加灵活，系统容量和覆盖也显著提升。LTE系统网络架构更加扁平化简单化，减少了网络节点和系统复杂度，从而减小了系统时延，也降低了网络部署和维护成本。LTE系统支持与其他3GPP系统互操作。根据双工方式不同LTE系统分为 <strong>FDD-LTE</strong>（Frequency Division Duplexing）和 <strong>TDD-LTE</strong> (Time Division Duplexing)，二者技术的主要区别在于空口的物理层上（像帧结构、时分设计、同步等）。FDD系统空口上下行采用成对的频段接收和发送数据，而TDD系统上下行则使用相同的频段在不同的时隙上传输，较FDD双工方式，TDD有着较高的频谱利用率。</p>
+<blockquote>
+<p><a href="http://baike.baidu.com/link?url=g9faQBaZJ2qy6VqtOUeZOgtpvtMB14gsDAX6fdDIxn_SWQTdnDvg2byVN5KOviMcWSr6D2b3rQJ8pNu2AZOhFAeWoQ7UM5GSeM3BmYqJ9tBR7yt54ln9C1byfXQ84wuRKUiltymdIOYcqT8V7lg8TJsAHgYXEAUMqxn7wp9INxibAmDmlgfEdCNEFaK29ps09FAtUXSKAwxw8lKsShsmc_">参考链接</a></p>
+</blockquote></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <center><img src="/favicon.ico" alt="iZheteng" /></a><a rel="nofollow" href="https://cuiqingwei.github.io/"> cuiqingwei.github.io </a></center>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

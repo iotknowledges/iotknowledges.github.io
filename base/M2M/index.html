@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="cuiqingwei">
+        <link rel="canonical" href="https://iotknowledges.github.io/base/M2M/">
+        <link rel="shortcut icon" href="favicon.ico">
+        
+
+	<title>M2M - IoT</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-42607542-3', 'iotknowledges.github.io');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">IoT</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">首页</a>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">概念 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../IoT/">IoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../WoT/">WoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../IoE/">IoE</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">M2M</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../LPWAN/">LPWAN</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../LTE/">LTE</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../IETF/">IETF</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../iotpic/">onePIC</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">协议&标准 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../stands&protocols/zWave/">z-Wave</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/EnOcean/">EnOcean</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/802.15.4/">IEEE802.15.4</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/ZigBee/">ZigBee</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/6LoWPAN/">6LoWPAN</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/RPL/">RPL</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/Lora/">LoRa</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/NB-IoT/">NB-IoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/Sigfox/">Sigfox</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/HaLow/">Halow</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../stands&protocols/WiGig/">WiGig</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">操作系统 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../os/tinyos/">TinyOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/contiki/">Contiki</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/mbedOS/">mbedOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/RIOT/">RIOT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/LiteOS/">LiteOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/MICO/">MiCO</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about/">关于</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../IoE/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../LPWAN/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/iotknowledges/iotknowledges.github.io">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#m2m">M2M</a></li>
+        
+    
+        <li class="main "><a href="#m2m_1">M2M的透析</a></li>
+        
+    
+        <li class="main "><a href="#m2m_2">物联网与M2M的关系</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="m2m">M2M</h1>
+<p><strong>M2M</strong>（Machine to Machine）是通过移动通讯对设备进行有效控制，从而将商务的边界大幅度扩展或创造出较传统方式更高效率的经营方式亦或创造出完全不同于传统方式的全新服务。</p>
+<p>M2M以设备通讯控制为核心，将原来低效率或甚至不可能的信息传输应用于商业中以获得更强的竞争力。M2M的商务模式目前应用方兴未艾，主要有移动物流管理（M-logistic management）、移动支付（M-POS）、移动监控（M-monitoring）等。</p>
+<h1 id="m2m_1">M2M的透析</h1>
+<p>M2M强调的是在商业活动中通过移动通讯技术和设备的应用变革既有商务模式或创造出新商务模式，是机器设备间的自动通讯。 从狭义上说，M2M只代表机器和机器之间的通信。目前，人们提到M2M的时候，更多的是指非IT机器设备通过移动通信网络与其他设备或IT系统的通信。放眼未来，人们认为M2M的范围不应拘泥于此，而是应该扩展到人对机器、机器对人、移动网络对机器之间的连接与通信。</p>
+<p>现在，M2M应用遍及电力、交通、工业控制、零售、公共事业管理、医疗、水利、石油等多个行业，对于车辆防盗、安全监测、自动售货、机械维修、公共交通管理等，M2M可以说是无所不能。</p>
+<p>M2M不是简单的数据在机器和机器之间的传输，更重要的是，它是机器和机器之间的一种智能化、交互式的通信。也就是说，即使人们没有实时发出信号，机器也会根据既定程序主动进行通信，并根据所得到的数据智能化地做出选择，对相关设备发出正确的指令。可以说，智能化、交互式成为了M2M有别于其它应用的典型特征，这一特征下的机器也被赋予了更多的“思想”和“智慧”。</p>
+<p>人们纷纷看好了M2M的发展前景。一个出发点就是，在当今世界上，机器的数量至少是人的数量的4倍，这意味着巨大的市场潜力。<strong>NTTdocomo</strong> 预测，2010年全球将有超过 <strong>4000亿台</strong> 的机器具备数据传输功能，取代人力控制和操作，实现设备的智能管理和服务。欧洲行业咨询机构IDATE则估计，到2010年M2M市场容量将达到2200亿欧元。</p>
+<h1 id="m2m_2">物联网与M2M的关系</h1>
+<p><strong>M2M是machine-to-machine的简称</strong>，即“<em>机器对机器</em>”的缩写，也有人理解为 <em>人对机器(man-to-machine)、机器对人(machine-to-man)</em> 等，旨在通过通信技术来实现人、机器和系统三者之问的智能化、交互式无缝连接 。M2M设备是能够回答包含在一些设备中的数据的请求或能够自动传送包含在这些设备中的数据的设备。M2M通信与物联网的核心理念一致，不同之处是物联网的概念、所采用的技术及应用场景更宽泛。而M2M则聚焦在无线通信网络应用上，是物联网应用的一种主要方式。</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <center><img src="/favicon.ico" alt="iZheteng" /></a><a rel="nofollow" href="https://cuiqingwei.github.io/"> cuiqingwei.github.io </a></center>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

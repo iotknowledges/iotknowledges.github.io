@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="cuiqingwei">
+        <link rel="canonical" href="https://iotknowledges.github.io/stands&protocols/6LoWPAN/">
+        <link rel="shortcut icon" href="favicon.ico">
+        
+
+	<title>6LoWPAN - IoT</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-42607542-3', 'iotknowledges.github.io');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">IoT</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">首页</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">概念 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../base/IoT/">IoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/WoT/">WoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/IoE/">IoE</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/M2M/">M2M</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/LPWAN/">LPWAN</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/LTE/">LTE</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/IETF/">IETF</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/iotpic/">onePIC</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">协议&标准 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../zWave/">z-Wave</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../EnOcean/">EnOcean</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../802.15.4/">IEEE802.15.4</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../ZigBee/">ZigBee</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">6LoWPAN</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../RPL/">RPL</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Lora/">LoRa</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../NB-IoT/">NB-IoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Sigfox/">Sigfox</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../HaLow/">Halow</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../WiGig/">WiGig</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">操作系统 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../os/tinyos/">TinyOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/contiki/">Contiki</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/mbedOS/">mbedOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/RIOT/">RIOT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/LiteOS/">LiteOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/MICO/">MiCO</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about/">关于</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../ZigBee/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../RPL/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/iotknowledges/iotknowledges.github.io">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#6lowpan">6LoWPAN</a></li>
+        
+            <li><a href="#_1">背景</a></li>
+        
+            <li><a href="#_2">技术优势</a></li>
+        
+            <li><a href="#_3">现状</a></li>
+        
+            <li><a href="#_4">参考资料</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="6lowpan">6LoWPAN</h1>
+<p><strong>6LoWPAN</strong> 是一种基于IPv6的低速无线个域网标准，即 <em>IPv6 over IEEE 802.15.4</em>。</p>
+<h2 id="_1">背景</h2>
+<p>将IP协议引入无线通信网络一直被认为是不现实的(不是完全不可能)。迄今为止，无线网只采用专用协议，因为 <strong>IP协议对内存和带宽要求较高</strong>，要 <strong>降低</strong> 它的 <strong>运行环境要求以适应微控制器及低功率无线连接很困难</strong>。</p>
+<p>基于IEEE 802.15.4实现IPv6通信的 <strong>IETF 6LoWPAN</strong> 草案标准的发布有望改变这一局面。6LoWPAN所具有的低功率运行的潜力使它很适合应用在从手持机到仪器的设备中，而其对 <strong>AES-128加密</strong> 的内置支持为强健的认证和安全性打下了基础。</p>
+<p>IEEE 802.15.4标准设计用于开发可以靠电池运行1到5年的紧凑型低功率 <strong>廉价嵌入式设备</strong> (如传感器)。该标准使用工作在2.4GHz频段的无线电收发器传送信息，使用的频带与Wi-Fi相同，但其 <strong>射频发射功率大约只有Wi-Fi的1%</strong>。这限制了IEEE 802.15.4设备的传输距离，因此，多台设备必须一起工作才能在更长的距离上逐跳传送信息和绕过障碍物。</p>
+<p>IETF 6LoWPAN工作组的任务是定义在如何利用IEEE 802.15.4链路支持基于IP的通信的同时，遵守开放标准以及保证与其他IP设备的 <strong>互操作性</strong>。</p>
+<p>这样做将消除对多种复杂网关(每种网关对应一种本地802.15.4协议)以及专用适配器和网关专有安全与管理程序的需要。然而，利用IP并不是件容易的事情：IP的地址和包头很大，传送的数据可能过于庞大而无法容纳在很小的IEEE 802.15.4数据包中。6LoWPAN工作组面临的技术挑战是发明一种将IP包头压缩到只传送必要内容的小数据包中的方法。他们的答案是 <strong>“Pay as you go”式的包头压缩方法</strong>。这些方法去除IP包头中的冗余或不必要的网络级信息。IP包头在接收时从链路级802.15.4包头的相关域中得到这些网络级信息。</p>
+<p>最简单的使用情况是一台与邻近802.15.4设备通信的802.15.4设备将非常高效率地得到处理。<strong>整个40字节IPv6包头被缩减为1个包头压缩字节(HC1)和1字节的“剩余跳数”</strong>。因为源和目的IP地址可以由链路级64位唯一ID(EUI-64)或802.15.4中使用的16位短地址生成。<strong>8字节用户数据报协议传输包头被压缩为4字节</strong>。</p>
+<p>随着通信任务变得更加复杂，6LoWPAN也相应调整。为了与嵌入式网络之外的设备通信，6LoWPAN增加了更大的IP地址。当交换的数据量小到可以放到基本包中时，可以在没有开销的情况下打包传送。对于大型传输，6LoWPAN <strong>增加分段包头来跟踪信息如何被拆分到不同段中</strong>。如果单一跳802.15.4就可以将包传送到目的地，数据包可以在不增加开销地情况下传送。多跳则需要加入网状路由(mesh-routing)包头。</p>
+<p>IETF 6LoWPAN取得的突破是得到一种 <strong>非常紧凑、高效的</strong> IP实现，消除了以前造成各种专门标准和专有协议的因素。这在工业协议（<em>BACNet、LonWorks、通用工业协议和监控与数据采集</em>）领域具有特别的价值。这些协议最初开发是为了提供特殊的行业特有的总线和链路(从控制器区域网总线到AC电源线)上的互操作性。</p>
+<p>几年前，这些协议的开发人员开发IP选择是为了实现利用以太网等“现代”技术。6LoWPAN的出现使这些老协议把它们的IP选择扩展到新的链路(如802.15.4)。因此，自然而然地可与专为802.15.4设计的新协议(<em>如ZigBee和ISA100.11a</em>)互操作。受益于此，各类低功率无线设备能够加入IP家庭中，与Wi-Fi、以太网以及其他类型的设备“称兄道弟”。</p>
+<p>随着IPv4地址的耗尽，IPv6是大势所趋。物联网技术的发展，将进一步推动IPv6的部署与应用。IETF 6LoWPAN技术具有无线低功耗、自组织网络的特点，是物联网感知层、无线传感器网络的重要技术，<strong>ZigBee新一代智能电网标准中SEP2.0已经采用6LoWPAN技术</strong>，随着美国智能电网的部署，<strong>6LoWPAN将成为事实标准，全面替代ZigBee标准</strong>。</p>
+<h2 id="_2">技术优势</h2>
+<ul>
+<li>
+<p><strong>普及性</strong>：IP网络应用广泛，作为下一代互联网核心技术的IPv6，也在加速其普及的步伐，在低速无线个域网中使用IPv6更易于被接受。</p>
+</li>
+<li>
+<p><strong>适用性</strong>：IP网络协议栈架构受到广泛的认可，低速无线个域网完全可以基于此架构进行简单、有效地开发。</p>
+</li>
+<li>
+<p><strong>更多地址空间</strong>：IPv6应用于低速无线个域网时，最大亮点就是庞大的地址空间。这恰恰满足了部署大规模、高密度低速无线个域网设备的需要。</p>
+</li>
+<li>
+<p><strong>支持无状态自动地址配置</strong>：IPv6中当节点启动时，可以自动读取MAC地址，并根据相关规则配置好所需的IPv6地址。这个特性对传感器网络来说，非常具有吸引力，因为在大多数情况下，不可能对传感器节点配置用户界面，节点必须具备自动配置功能。</p>
+</li>
+<li>
+<p><strong>易接入</strong>：低速无线个域网使用IPv6技术，更易于接入其他基于IP技术的网络及下一代互联网，使其可以充分利用IP网络的技术进行发展。</p>
+</li>
+<li>
+<p><strong>易开发</strong>：目前基于IPv6的许多技术已比较成熟，并被广泛接受，针对低速无线个域网的特性对这些技术进行适当的精简和取舍，可以简化协议开发的过程。</p>
+</li>
+</ul>
+<h2 id="_3">现状</h2>
+<p>6LoWPAN技术得到学术界和产业界的广泛关注，如美国加州大学伯克利分校(Berkely)、瑞典计算机科学院(Swedish Institute of Computer Science)，以及 <strong>思科Cisco、霍尼韦尔Honeywell</strong> 等知名企业，并推出相应的产品。6LoWPAN协议已经在许多开源软件上实现。最著名的是 <strong>Contiki</strong> 、<strong>Tinyos</strong>，分别实现了6LoWPAN的完整协议栈，并得到广泛测试和应用。</p>
+<h2 id="_4">参考资料</h2>
+<ol>
+<li><a href="http://baike.baidu.com/redirect/44efSwPlreJQzDQXIPnbqzjXebWOMK-ssyDdeELLUBddAQXptlfbPzLprKzoy3tw3ud6Cw3Pm0hWLfimhkAhsv02Tg">6Lowpan标准</a>  <em><font color="#aaa">．IETF[引用日期2012-09-3]</font></em></li>
+<li><a href="http://baike.baidu.com/redirect/310bl_c7FMes9eaJVG4KKSbwVry9NTpOAQ7xHgeCSA9_Sd2XS_P6kBaGVWa4qgGDOAE">6Lowpan开源操作系统Contiki</a>  <em><font color="#aaa">．Contiki官网[引用日期2012-09-3]</font></em></li>
+</ol>
+<blockquote>
+<p><a href="http://baike.baidu.com/link?url=RmTA3Aykv1aEz4LI38W-SPS08p50Dy6se8MsEc4deF4_eSKajq-3WZ7PFBFq9HQLUsIdwFl6-IJnOgEbTRnRfa">参考链接</a></p>
+</blockquote></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <center><img src="/favicon.ico" alt="iZheteng" /></a><a rel="nofollow" href="https://cuiqingwei.github.io/"> cuiqingwei.github.io </a></center>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

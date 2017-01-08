@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="cuiqingwei">
+        <link rel="canonical" href="https://iotknowledges.github.io/stands&protocols/zWave/">
+        <link rel="shortcut icon" href="favicon.ico">
+        
+
+	<title>z-Wave - IoT</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-42607542-3', 'iotknowledges.github.io');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">IoT</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">首页</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">概念 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../base/IoT/">IoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/WoT/">WoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/IoE/">IoE</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/M2M/">M2M</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/LPWAN/">LPWAN</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/LTE/">LTE</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/IETF/">IETF</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../base/iotpic/">onePIC</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">协议&标准 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li class="active">
+    <a href="./">z-Wave</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../EnOcean/">EnOcean</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../802.15.4/">IEEE802.15.4</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../ZigBee/">ZigBee</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../6LoWPAN/">6LoWPAN</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../RPL/">RPL</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Lora/">LoRa</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../NB-IoT/">NB-IoT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Sigfox/">Sigfox</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../HaLow/">Halow</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../WiGig/">WiGig</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">操作系统 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../os/tinyos/">TinyOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/contiki/">Contiki</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/mbedOS/">mbedOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/RIOT/">RIOT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/LiteOS/">LiteOS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../os/MICO/">MiCO</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about/">关于</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../../base/iotpic/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../EnOcean/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/iotknowledges/iotknowledges.github.io">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#z-wave">Z-Wave</a></li>
+        
+            <li><a href="#_1">简介</a></li>
+        
+            <li><a href="#_2">网络结构</a></li>
+        
+            <li><a href="#_3">路由技术</a></li>
+        
+            <li><a href="#_4">市场策略</a></li>
+        
+            <li><a href="#_5">发展前景</a></li>
+        
+            <li><a href="#_6">应用</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="z-wave">Z-Wave</h1>
+<p><strong>Z-Wave</strong> 是由 <strong>丹麦公司Zensys所</strong> 一手主导的无线组网规格，Z-wave联盟(Z-wave Alliance)虽然没有ZigBee联盟强大，但是Z-wave联盟的成员均是已经在智能家居领域有现行产品的厂商，该联盟已经具有 <strong>160</strong> 多家国际知名公司，范围基本覆盖全球各个国家和地区。</p>
+<h2 id="_1">简介</h2>
+<p>为何Z-wave在智能家居方面占据了强势地位呢？这主要基于Z-Wave的属性。</p>
+<p><img alt="Z-Wave标志" src="http://a.hiphotos.baidu.com/baike/c0%3Dbaike72%2C5%2C5%2C72%2C24/sign=1844ba7c720e0cf3b4fa46a96b2f997a/9d82d158ccbf6c81081c3b86bc3eb13533fa40b0.jpg" /></p>
+<p>Z-Wave是一种新兴的基于 <strong>射频的、低成本、低功耗、高可靠</strong>、适于网络的短距离无线通信技术。工作频带为 <strong>908.42MHz(美国)~868.42MHz(欧洲)</strong>，采用 <strong>FSK(BFSK/GFSK)</strong> 调制方式，数据传输速率为 <strong>9.6kbps</strong>，信号的有效覆盖范围在室内是 <strong>30m</strong>，室外可超过 <strong>100m</strong>，适合于窄宽带应用场合。随着通信距离的增大，设备的复杂度、功耗以及系统成本都在增加，相对于现有的各种无线通信技术，Z-Wave技术将是最低功耗和最低成本的技术，有力地推动着低速率无线个人区域网。</p>
+<p>Z-Wave技术设计用于住宅、照明商业控制以及状态读取应用，例如抄表、照明及家电控制、HVAC、接入控制、防盗及火灾检测等。Z-Wave可将任何独立的设备转换为智能网络设备，从而可以实现控制和无线监测。　Z-Wave技术在最初设计时，就定位于智能家居无线控制领域。采用小数据格式传输，<strong>40kb/s</strong> 的传输速率足以应对，早期甚至使用9.6kb/s的速率传输。与同类的其他无线技术相比，拥有相对较低的传输频率、相对较远的传输距离和一定的价格优势。</p>
+<p>Z-Wave技术专门针对窄带应用并采用创新的软件解决方案取代成本高的硬件，因此只需花费其它类似技术的一小部份成本就可以组建高质量的无线网络。</p>
+<h2 id="_2">网络结构</h2>
+<p>每一个Z-Wave网络都拥有自己独立的网络地址(<strong>HomeID</strong>);网络内每个节点的地址(<strong>NodeID</strong>)，由控制节点(<strong>Controller</strong>)分配。每个网络最多容纳 <strong>232个节点</strong> (<strong>Slave</strong>)，包括控制节点在内。控制节点可以有多个，但只有一个主控制节点，即所有网络内节点的分配，都由主控制节点负责，其他控制节点只是转发主控制节点的命令。已入网的普通节点，所有控制节点都可以控制。超出通信距离的节点，可以通过控制器与受控节点之间的其他节点，以路由(Routing)的方式完成控制。</p>
+<h2 id="_3">路由技术</h2>
+<p>Z-Wave采用了 <strong>动态路由技术</strong>，每个Slave内部都存有一个 <strong>路由表</strong>，该路由表由Controller写入。存储信息为该Slave入网时，周边存在的其他Slave的NodeID。这样每个Slave都知道周围有哪些Slaves，而Controller存储了所有Slaves的路由信息。当Controller与受控Slave的距离超出最大控制距离时，Controller会调用最后一次正确控制该Slave的路径发送命令，如该路径失败，则从第一个Slave开始重新检索新的路径。</p>
+<h2 id="_4">市场策略</h2>
+<p>不同于 <strong>ZigBee</strong> 技术的近距离无线组网通信技术，是由芯片与软件开发商 <strong>Zensys</strong> 与另外多家组建的一个新的联盟——Z-Wave联盟，以推动在家庭自动化领域采用Z-Wave协议。
+<strong>Cisco</strong>，<strong>Intel</strong> 相继投资Zensys，并加入Z-Wave联盟。微软也是Z-Wave联盟成员。</p>
+<p>众所周知，丹麦的乐高玩具全球范围内都受小朋友欢迎，在一次全球z-wave技术开发者大会上，其联盟主席做了z-wave的市场远景展望，z-wave将致力于打造成大人的玩具，z-wave的发展方向是集娱乐功能和实用功能于一体。Z-Wave锁定的技术平台就是家庭自动化，Z-Wave的角色即为替代现行的 <strong>X-10</strong> 规格，已经有X-10与Z-Wave共生的桥接器产品出现。而衍生出的产品琳琅满目，在国外许多喜欢自己动手做(DIY)的家庭自动化用户也都开始注意并使用Z-Wave。</p>
+<p>在技术面上，<strong>Z-Wave从原本的9.6Kbit/s提升到40Kbit/s</strong>，并宣称提升后原本的9.6Kbit/s能与40Kbit/s共存。在节点数方面，一个Z-Wave网路可支援 <strong>两百三十二个点</strong>。</p>
+<p>Z-Wave使用的路由协议是源路由(Source Routing)，在源头发出封包就可以直接在封包内指定详细路由的路径。这个做法大大省去每个节点花在路由上的资源。Z-Wave的第三代晶片ZW0301，其中微控制器核心使采用六倍速8051架构，搭配32KB的Flash ROM以及256KB的SRAM。耗电流方面，睡眠模式是2.5微安培，接收23毫安培，发射在0dBm输出下是36毫安培。不过由于频带选定在868/908MHz，这样的耗电仍稍嫌偏高。</p>
+<p>虽然Z-Wave未臻完善，但其锁定了正确的市场，并将自己的产品与Windows系列产品结合，Zensys提供Windows开发用的动态连结资料库(Dynamically Linked Library, DLL)，设计者可直接调用该DLL内的API函数(Application Program Interface, API)来做PC软体设计。</p>
+<p>尤其PC与遥控器的使用者介面才是使用者直觉产生使用者经验的媒介，加上产品造型的工业设计与质感，更是提升价值所在之处，而这些都是所有Z-Wave 联盟厂家愿意投资的领域。而其余的技术，都由平台提供商负责，使得Z-Wave的客户可以专心致力于提升并加强使用者经验。</p>
+<h2 id="_5">发展前景</h2>
+<p>Z-Wave是一种结构简单，成本低廉，性能可靠的无线通信技术，通过Z-Wave技术构建的无线网络，不仅可以通过本网络设备实现对家电的遥控，甚至可以通过Internet网络对Z-Wave网络中的设备进行控制。在2011年美国ces展，wintop都已经推出基于互联网远程控制的产品，如远程监控，远程照明控制等，且该技术已经成熟，主要是一个市场开拓及消费群体的培育还需要一段时间。随着Z-Wave联盟的不断进扩大，该技术的应用也将不仅仅局限于智能家居方面，在酒店控制系统，工业自动化，农业自动化等多个领域，都将发现Z-Wave无线网络的身影。</p>
+<p>最让人担心的是，Z-Wave面临政府限制使用风险。<strong>Z-Wave</strong> 的使用频段在 <strong>美国</strong> 为 <strong>915MHz</strong>，而在 <strong>欧洲</strong> 地区为 <strong>868.42MHz</strong>，二者属于国际无线划分的一区和二区的ISM频段，而中国属于三区，没有划入ISM频段，因此 <strong>很可能在中国禁止使用</strong>。</p>
+<h2 id="_6">应用</h2>
+<p>三室一厅房间的Z-Wave系统解决方案：由3个嵌入式照明控制器，3个墙壁开关，一个全功能红外遥控器，一个触摸控制屏构成主系统;嵌入式情景控制器，手持式情景控制器为功能扩展模块。其中全功能红外遥控器与触摸控制屏为Controller，嵌入式照明控制器，嵌入式情景控制器及手持式情景控制器均为Slave。</p>
+<p>鉴于该系统中所有设备均使用了 <em>路由技术</em>，安装时只需保证每两个 <em>嵌入式设备</em> 之间的距离小于最远通信距离即可。安装完成后，通过HRPZ全功能红外遥控器先将所有设备入网，待触摸控制屏入网后，可同步更新所有入网设备至触摸控制屏中。</p>
+<p>设备入网后，用户通过全功能遥控器及触摸控制屏都可以直观的看到家中所有Z-Wave入网电器的开关状态，并且可以方便的对其进行控制。如将触摸控制屏接入Internet网络，则可以利用PDA、PC机等通过Internet网络远程控制家中的电器。</p>
+<p>在配有HRPZ全功能遥控器的系统中，用户可以更加方便的实现在家中的移动控制。嵌入式情景控制器及手持式情景控制器，可通过触摸控制屏或配套的PC机配置软件设置会议、影视等多种情景，通过一键操作，来完成一系列组合功能的控制。</p>
+<blockquote>
+<p><a href="http://baike.baidu.com/link?url=CaJ3Eob-zOWAgjwDYDUw7DvLVpyJCYI7mnztmLPQ1bHsEIe1POblToGAUwfp4F9tvgZAO_B1yxTmdMSSqf7zuK">参考链接</a></p>
+</blockquote></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <center><img src="/favicon.ico" alt="iZheteng" /></a><a rel="nofollow" href="https://cuiqingwei.github.io/"> cuiqingwei.github.io </a></center>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
